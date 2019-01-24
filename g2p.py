@@ -190,7 +190,12 @@ def mainApply(translator, options, output_file):
                 pass
 
 def mainApplyWord(translator, options, output_file):
-    word = options.applyWord.decode(options.encoding)
+    import sys
+    if sys.version_info >= (3, 0):
+        word = options.applyWord
+    else:
+        word = options.applyWord.decode(options.encoding)
+
     left = tuple(word)
     try:
         result = translator(left)
