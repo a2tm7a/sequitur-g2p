@@ -90,7 +90,7 @@ sequiturModules = [
     'sequitur',
     'sequitur_',
     'symbols',
-    'main',
+    'G2P',
     'tool']
 
 sequiturScripts = [
