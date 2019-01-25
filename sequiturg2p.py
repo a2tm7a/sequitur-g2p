@@ -2,8 +2,8 @@ import subprocess
 from subprocess import Popen, PIPE, STDOUT
 
 class G2P:
-    def __init__(self):
-        self.model = "models/models-6-en"
+    def __init__(self, model):
+        self.model = model
 
     def train(self):
         raise NotImplementedError("Not available right now")
